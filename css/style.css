@@ -446,24 +446,30 @@ section {
 
 /* info start  */
 
-.info .box-container .box a {
+.info .box-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 8rem 0;
+}
+
+.info .box {
+  flex-basis: 25%; /* Adjust the flex-basis value as desired */
+  text-align: center;
+}
+
+.info .box a {
+  display: inline-block;
   font-size: 4rem;
   color: var(--green);
   padding: 0 0.6rem;
+  transition: font-size 0.3s, color 0.3s;
 }
-.info .box-container .box a:hover {
+
+.info .box a:hover {
   font-size: 5rem;
   color: var(--green-opacity);
   padding: 0 0.6rem;
-}
-
-.info .box-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: space-evenly;
-  gap: 15rem;
-  padding: 8rem 0;
 }
 
 /* info end  */
