@@ -14,15 +14,22 @@
 }
 
 :root {
-  --green: #1bbca8;
+  --green: #2cd3e1;
   --white: #fff;
   --dark-white: #cccccc;
   --black: #232323;
   --light-black: #777777;
-  --border: 1px solid #1bbca8;
+  --border: 1px solid #2cd3e1;
   --box-shadow: 0 0 0.7rem 0 #777777;
-  --green-opacity: rgba(27, 188, 168, 0.5);
+  --green-opacity: rgba(44, 211, 225, 0.5);
+
+   /**
+   * BORDER RADIUS
+   */
+   --radius-circle: 50%;
 }
+
+
 *::selection {
   background: var(--green);
   color: var(--white);
@@ -114,7 +121,7 @@ section {
 
 /* home start  */
 .home {
-  background: url(../images/heroBilly5.png);
+  background: url(../images/billyWater2.png);
   height: 100vh;
   background-size: cover;
 }
@@ -620,4 +627,45 @@ section {
   html {
     font-size: 50%;
   }
+}
+
+/* Custom Cursor */
+
+.cursor-dot,
+.cursor-outline {
+  display: block;
+  position: fixed;
+  top: -60px;
+  left: -60px;
+  transform: translate(-50%, -50%);
+  border-radius: var(--radius-circle);
+  z-index: 1001;
+  transition-property: opacity, transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  pointer-events: none;
+}
+
+.cursor-dot {
+  width: 60px;
+  height: 60px;
+  background-color: var(--green);
+  transform: translate(-50%, -50%) scale(0.1);
+}
+
+.cursor-dot.hovered {
+  transform: translate(-50%, -50%) scale(1);
+  mix-blend-mode: exclusion;
+}
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--green);
+  opacity: 0.5;
+  transition-duration: 100ms;
+}
+
+.cursor-outline.hovered {
+  opacity: 0;
 }
