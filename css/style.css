@@ -196,7 +196,7 @@ section {
   padding: 0 0.6rem;
 }
 .about .container .image .overlay .share a:hover {
-  color: var(--dark-white);
+  color: var(--black);
   transform: rotate(360deg);
 }
 .about .container .content .flex {
