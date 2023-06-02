@@ -73,6 +73,8 @@ var swiper = new Swiper('.testimonials-slider', {
 const cursors = document.querySelectorAll("[data-cursor]");
 const hoveredElements = [...document.querySelectorAll("button"), ...document.querySelectorAll("a")];
 
+
+
 window.addEventListener("mousemove", function (event) {
 
   const posX = event.clientX;
@@ -89,6 +91,13 @@ window.addEventListener("mousemove", function (event) {
   }, 80);
 
 });
+
+// Define the addEventOnElements function
+function addEventOnElements(elements, event, callback) {
+  elements.forEach(function (element) {
+    element.addEventListener(event, callback);
+  });
+}
 
 /** add hovered class when mouseover on hoverElements */
 addEventOnElements(hoveredElements, "mouseover", function () {

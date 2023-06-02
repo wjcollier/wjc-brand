@@ -23,12 +23,11 @@
   --box-shadow: 0 0 0.7rem 0 #777777;
   --green-opacity: rgba(44, 211, 225, 0.5);
 
-   /**
+  /**
    * BORDER RADIUS
    */
-   --radius-circle: 50%;
+  --radius-circle: 50%;
 }
-
 
 *::selection {
   background: var(--green);
@@ -597,6 +596,16 @@ section {
 }
 
 @media (max-width: 768px) {
+
+  /* Disable custom cursor */
+  [data-cursor] {
+    cursor: auto !important;
+  }
+   .cursor-dot,
+  .cursor-outline {
+    display: none !important;
+  }
+  
   #menu-bar {
     display: block;
   }
