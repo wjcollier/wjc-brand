@@ -122,7 +122,7 @@ section {
 
 /* home start  */
 .home {
-  background: url(../images/billyWater2.webp);
+  background: url(../images/knives4.png);
   height: 100vh;
   background-size: cover;
 }
@@ -350,6 +350,8 @@ section {
   color: var(--light-black);
   line-height: 2.5rem;
   font-weight: 500;
+  text-transform: none;
+  text-align: left;
 }
 /* services end  */
 
@@ -598,6 +600,9 @@ section {
 }
 
 @media (max-width: 768px) {
+section {
+  padding: 10% 5%;
+}
 
   /* Disable custom cursor */
   [data-cursor] {
