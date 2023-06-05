@@ -162,10 +162,11 @@ section {
 /* about start  */
 .about .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
   align-items: flex-start;
-  overflow-x: overlay;
+  overflow-x: scroll;
+  padding-bottom: 2rem;
 }
 .about .container .image {
   position: relative;
@@ -177,6 +178,7 @@ section {
 }
 .about .container .image img {
   width: 100%;
+  height: auto;
 }
 .about .container .image .overlay {
   position: absolute;
@@ -185,7 +187,12 @@ section {
   height: 100%;
   z-index: 1;
   top: -100%;
+  transition: top 0.5s ease;
 }
+.about .container .image:hover .overlay {
+  top: 0;
+}
+
 .about .container .image .overlay .share {
   position: absolute;
   top: 50%;
@@ -423,7 +430,7 @@ section {
 /* portfolio end  */
 
 /* icons start  */
-.icons {
+/* .icons {
   background: var(--black);
   text-align: center;
 }
@@ -451,7 +458,7 @@ section {
 .icons .testimonials-slider .slide span {
   font-size: 2rem;
   color: var(--white);
-}
+} */
 /* testimonials end  */
 
 /* info start  */
