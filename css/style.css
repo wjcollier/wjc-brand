@@ -11,7 +11,6 @@
   border: none;
   outline: none;
   transition: all 0.5s ease-out 0s;
-
 }
 
 :root {
@@ -415,7 +414,7 @@ section {
 .portfolio .box-container .box .content i {
   font-size: 3.2rem;
   color: var(--green);
-  margin-bottom: 1.7rem;
+  margin-bottom: 1rem;
 }
 .portfolio .box-container .box .content h3 {
   font-size: 1.8rem;
@@ -429,39 +428,23 @@ section {
   line-height: 2.5rem;
   font-weight: 500;
 }
+@media  (max-width: 375px) {
+  .portfolio .box-container .box .content {
+    padding: 4rem 1rem; /* Adjust the padding values */
+    margin-top: 1rem; /* Adjust the margin-top value */
+  }
+  .portfolio .box-container .box .content i {
+    font-size: 3.2rem;
+    color: var(--green);
+  }
+  .portfolio .box-container .box .content h3 {
+    font-size: 1.8rem;
+    color: var(--black);
+    font-weight: 400;
+    margin: 1.5rem 0;
+  }
+}
 /* portfolio end  */
-
-/* icons start  */
-/* .icons {
-  background: var(--black);
-  text-align: center;
-}
-.icons .testimonials-slider {
-  display: flex;
-  justify-content: center;
-  padding: 5rem 0;
-}
-.icons .testimonials-slider .slide .quote i {
-  font-size: 8rem;
-  color: var(--white);
-}
-.icons .testimonials-slider .slide .image img {
-  width: 12rem;
-  border-radius: 50%;
-  padding: 2rem 0;
-}
-.icons .testimonials-slider .slide p {
-  color: var(--light-black);
-  font-size: 1.8rem;
-  line-height: 3rem;
-  letter-spacing: 0.1rem;
-  padding: 1.5rem 0;
-}
-.icons .testimonials-slider .slide span {
-  font-size: 2rem;
-  color: var(--white);
-} */
-/* testimonials end  */
 
 /* info start  */
 
@@ -609,19 +592,19 @@ section {
 }
 
 @media (max-width: 768px) {
-section {
-  padding: 10% 5%;
-}
+  section {
+    padding: 10% 5%;
+  }
 
   /* Disable custom cursor */
   [data-cursor] {
     cursor: auto !important;
   }
-   .cursor-dot,
+  .cursor-dot,
   .cursor-outline {
     display: none !important;
   }
-  
+
   #menu-bar {
     display: block;
   }
