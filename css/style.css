@@ -381,7 +381,12 @@ section {
   margin-bottom: 3rem;
   padding-top: 2rem;
 }
-
+/* Safari fallback */
+@supports not (background: -webkit-image-set(url(../images/billy-line.webp) 1x)) {
+  .available {
+    background-image: url(../images/billy-line.png);
+  }
+}
 /* available end  */
 
 /* portfolio start  */
