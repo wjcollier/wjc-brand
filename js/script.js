@@ -34,7 +34,7 @@ window.onscroll = () => {
 }
 
 var typed = new Typed('.typing', {
-  strings: ['Executive Chef', 'Freelancer', 'Food + Bev Director'],
+  strings: ['Executive Chef', 'Pitmaster', 'Food + Bev Director'],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true
